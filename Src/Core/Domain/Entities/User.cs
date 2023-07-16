@@ -25,7 +25,7 @@ public class User:AuditableEntity
     public DateTime BirthDay { get;  set; }
     public string Password { get;  set; }
     public string AboutMe { get;  set; }
-    public string ProfilePicture { get;  set; }
+    public byte[] ProfilePicture { get;  set; }
 
 
     //To create self referencing many-to-many UserRelations
