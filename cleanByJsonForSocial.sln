@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{67E05E85-74AF-4307-9037-D823D2B94A64}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\Document V6.docx = Docs\Document V6.docx
+		Docs\Documentation Excell.xlsx = Docs\Documentation Excell.xlsx
+		Docs\Timing work.xlsx = Docs\Timing work.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{9DDE88A3-1206-4502-9484-784032022961}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5C4D6E0C-E484-47AE-9319-CEC8E7E0F9BA}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2E3DBDB-A2CC-4198-AFA9-2DCC9D7ED1AE}
+	EndGlobalSection
+EndGlobal
