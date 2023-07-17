@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using MediatR;
+using ValidationException = Application.Common.Exceptions.ValidationException;
 
 namespace Application.Common.Behavior;
 
@@ -27,7 +28,7 @@ public class RequestValidationBehavior<TRequest,TResponse>:IPipelineBehavior<TRe
             .ToList();
         if (failures.Count!=0)
         {
-            throw new Exception.ValidationException(failures);
+            throw new ValidationException(failures);
         }
 
         return await next();

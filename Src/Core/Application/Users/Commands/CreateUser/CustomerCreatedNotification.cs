@@ -2,7 +2,7 @@
 using Application.Common.Notification.Models;
 using MediatR;
 
-namespace Application.Users.CreateUser;
+namespace Application.Users.Commands.CreateUser;
 
 public class CustomerCreatedNotification : INotification
 {

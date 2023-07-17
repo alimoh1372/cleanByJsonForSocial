@@ -1,8 +1,7 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Application.Common.Utility;
+﻿using Application.Common.Utility;
 using FluentValidation;
 
-namespace Application.Users.CreateUser;
+namespace Application.Users.Commands.CreateUser;
 
 public class CreateUserCommandValidator:AbstractValidator<CreateUserCommand>
 {
