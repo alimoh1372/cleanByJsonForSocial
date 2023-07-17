@@ -18,7 +18,7 @@ public class User:AuditableEntity
         ToMessages = new HashSet<Message>();
     }
     #region Properties
-
+    public long  CustomerId { get; set; }
     public string Name { get; set; }
     public string LastName { get;  set; }
     public Email Email { get;  set; }

@@ -30,19 +30,22 @@ public class CreateUserCommand:IRequest
 
         public async Task<Unit> Handle(CreateUserCommand request, CancellationToken cancellationToken)
         {
-            var entity=new User
+            var entity = new User
             {
-               
+
                 Name = request.Name,
                 LastName = request.LastName,
                 Email = request.Email,
                 BirthDay = request.BirthDay,
                 Password = request.Password,
                 AboutMe = request.AboutMe,
-                ProfilePicture = new byte[]
-                {
-                }
-            }
+                ProfilePicture = request.ProfilePicture
+            };
+        await   _context.Users.AddAsync(entity, cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken);
+        await _mediator.Publish(new CustomerCreatedNotification { CustomerId = entity.CustomerId.ToString() }, cancellationToken);
+        return Unit.Value;
+
         }
     }
 }
