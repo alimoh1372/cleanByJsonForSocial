@@ -12,4 +12,5 @@
         public const string EditTimeOver = "time to edit is ended";
         public const string CantSendToNonFriendUsers = "You can't send message to non-friend users";
         public const string IsInvalid = "has invalid value.";
+        public const string NotAuthorized = "You don't have perrmision to do this operation.";
     }

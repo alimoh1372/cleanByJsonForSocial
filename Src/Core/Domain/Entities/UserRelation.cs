@@ -14,4 +14,9 @@ public class UserRelation:AuditableEntity
 
     public string RelationRequestMessage { get; set; }
     public bool Approve { get; set; }
+
+    public UserRelation()
+    {
+        Approve = false;
+    }
 }
