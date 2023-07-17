@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using SocialNetworkApi.Application.Contracts.UserContracts;
 
 namespace Application.Users.Queries.GetEditProfilePicture;
 

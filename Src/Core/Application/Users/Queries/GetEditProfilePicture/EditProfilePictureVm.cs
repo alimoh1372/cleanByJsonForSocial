@@ -2,7 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 
-namespace SocialNetworkApi.Application.Contracts.UserContracts;
+namespace Application.Users.Queries.GetEditProfilePicture;
 
 /// <summary>
 /// To edit profile using this command

@@ -4,16 +4,15 @@ using Application.Common.Interfaces;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
-using SocialNetworkApi.Application.Contracts.UserContracts;
 
 namespace Application.Users.Queries.GetEditProfilePicture;
 
-public class GetEditProfilePictureHandler:IRequestHandler<GetEditProfilePictureQuery,EditProfilePictureVm>
+public class GetEditProfilePictureQeuryHandler:IRequestHandler<GetEditProfilePictureQuery,EditProfilePictureVm>
 {
     private readonly ISocialNetworkDbContext _context;
     private readonly IMapper _mapper;
 
-    public GetEditProfilePictureHandler(ISocialNetworkDbContext context, IMapper mapper)
+    public GetEditProfilePictureQeuryHandler(ISocialNetworkDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
