@@ -4,5 +4,5 @@ namespace Application.Common.Interfaces;
 
 public interface INotificationService
 {
-    Task SendAsync(NotifMessageDto message);
+    Task SendAsync(NotifMessageDto message,CancellationToken cancellationToken);
 }

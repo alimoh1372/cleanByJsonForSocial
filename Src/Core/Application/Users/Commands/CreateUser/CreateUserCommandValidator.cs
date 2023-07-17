@@ -3,7 +3,7 @@ using FluentValidation;
 
 namespace Application.Users.Commands.CreateUser;
 
-public class CreateUserCommandValidator:AbstractValidator<CreateUserCommand>
+public class CreateUserCommandValidator:AbstractValidator<CreateCommandRecord>
 {
     public CreateUserCommandValidator()
     {

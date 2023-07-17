@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -10,6 +10,8 @@
     <Folder Include="Common\Exceptions\" />
     <Folder Include="Common\Mapping\" />
     <Folder Include="Common\Notification\Models\" />
+    <Folder Include="UserRelation\Commands\" />
+    <Folder Include="UserRelation\Queries\" />
   </ItemGroup>
 
   <ItemGroup>
