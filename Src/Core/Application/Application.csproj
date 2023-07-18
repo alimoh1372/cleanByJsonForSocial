@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="Common\Mapping\" />
     <Folder Include="Common\Notification\Models\" />
-    <Folder Include="UserRelations\Queries\" />
   </ItemGroup>
 
   <ItemGroup>

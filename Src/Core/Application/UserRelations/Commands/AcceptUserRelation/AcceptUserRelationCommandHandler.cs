@@ -24,6 +24,7 @@ public class AcceptUserRelationCommandHandler:IRequestHandler<AcceptUserRelation
         var authenticatedUser =await _authHelper.GetUserInfo();
         if (authenticatedUser == null)
             throw new NotAuthenticatedRequestException();
+        //Handle the authorization 
         if (authenticatedUser.Id != request.UserIdRequestSentToIt)
             throw new NotAuthorizedRequestException();
 
