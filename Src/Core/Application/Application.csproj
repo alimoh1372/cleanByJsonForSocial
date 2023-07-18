@@ -10,7 +10,7 @@
     <Folder Include="Common\Mapping\" />
     <Folder Include="Common\Notification\Models\" />
     <Folder Include="Messages\Commands\Edit\" />
-    <Folder Include="Messages\Queries\" />
+    <Folder Include="Messages\Queries\GetMessages\" />
   </ItemGroup>
 
   <ItemGroup>
