@@ -7,6 +7,7 @@ namespace Domain.Entities;
 /// </summary>
 public class Message:AuditableEntity
 {
+    public long Id { get; set; }
     public long FkFromUserId { get;  set; }
     public User FromUser { get;  set; }
 
