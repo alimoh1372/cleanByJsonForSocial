@@ -12,6 +12,7 @@
     <Folder Include="Messages\Commands\Edit\" />
     <Folder Include="Messages\Queries\GetMessages\" />
     <Folder Include="Messages\Queries\GetEditMessage\" />
+    <Folder Include="Messages\Queries\GetMessage\" />
   </ItemGroup>
 
   <ItemGroup>
