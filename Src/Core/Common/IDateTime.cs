@@ -1,6 +1,6 @@
 ﻿namespace Common;
 
-public class IDateTime
+public interface IDateTime
 {
     DateTime Now { get; }
 }

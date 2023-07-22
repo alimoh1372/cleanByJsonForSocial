@@ -6,6 +6,7 @@ namespace Domain.Entities;
 /// </summary>
 public class UserRelation:AuditableEntity
 {
+    public long UserRelationId { get; set; }
     public long FkUserAId { get;  set; }
     public User UserA { get;  set; }
 
