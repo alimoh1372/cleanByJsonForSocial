@@ -10,9 +10,9 @@ public class RequestPerformanceBehavior<TRequest,TResponse>:IPipelineBehavior<TR
 {
     private readonly Stopwatch _timer;
     private readonly ILogger _logger;
-    private readonly ICurrentUserService _currentUserService;
+    private readonly IAuthHelper _currentUserService;
 
-    public RequestPerformanceBehavior(ILogger logger, ICurrentUserService currentUserService)
+    public RequestPerformanceBehavior(ILogger logger, IAuthHelper currentUserService)
     {
         _timer = new Stopwatch();
         _logger = logger;
@@ -32,7 +32,7 @@ public class RequestPerformanceBehavior<TRequest,TResponse>:IPipelineBehavior<TR
             var name = typeof(TRequest).Name;
             _logger.LogInformation("cleanByJsonForSocial Long Running Request:" +
                                            "{Name} ({ElapsedMilliseconds} milliseconds) {@UserId} {@Request}"
-                        , name, _timer.ElapsedMilliseconds, _currentUserService.UserId, request);
+                        , name, _timer.ElapsedMilliseconds, _currentUserService.GetUserInfo().Result.Id, request);
         }
 
         return response;

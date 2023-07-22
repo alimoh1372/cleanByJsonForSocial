@@ -1,5 +1,4 @@
-﻿using Application.Messages.Queries.GetEditMessageQuery;
-using MediatR;
+﻿using MediatR;
 
 namespace Application.Messages.Queries.GetEditMessage;
 

@@ -2,7 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 
-namespace Application.Messages.Queries.GetEditMessageQuery;
+namespace Application.Messages.Queries.GetEditMessage;
 
 /// <summary>
 /// Command model of Edit message

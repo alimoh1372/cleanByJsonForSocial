@@ -1,6 +1,5 @@
 ﻿using Application.Common.Exceptions;
 using Application.Common.Interfaces;
-using Application.Messages.Queries.GetEditMessageQuery;
 using AutoMapper;
 using Domain.Entities;
 using MediatR;
