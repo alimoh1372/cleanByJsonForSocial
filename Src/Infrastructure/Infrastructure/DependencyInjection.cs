@@ -15,7 +15,7 @@ public static class DependencyInjection
        
         services.AddTransient<IDateTime, MachineDateTime>();
         services.AddTransient<INotificationService, NotificationService>();
-
+        services.AddTransient<IPasswordHasher, PasswordHasher.PasswordHasher>();
 
         return services;
     }

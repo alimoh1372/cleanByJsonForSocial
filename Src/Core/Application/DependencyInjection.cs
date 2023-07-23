@@ -1,5 +1,7 @@
 ﻿using System.Reflection;
 using Application.Common.Behavior;
+using Application.Common.Interfaces;
+using Application.Common.Utility;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,7 +15,7 @@ public static class DependencyInjection
         services.AddMediatR(Assembly.GetExecutingAssembly());
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestPerformanceBehavior<,>));
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(RequestValidationBehavior<,>));
-
+        services.AddScoped<IUserAndUserRelationService, UserAndUserRelationServices>();
 
         return services;
     }

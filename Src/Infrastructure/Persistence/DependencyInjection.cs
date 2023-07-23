@@ -11,7 +11,7 @@ public static class DependencyInjection
     {
         services.AddDbContext<SocialNetworkApiContext>
         (
-            option => option.UseSqlServer(configuration.GetConnectionString("SocialApiConnectionString")
+            option => option.UseSqlServer(configuration.GetConnectionString("CleanSocialNetworkApiConnectionStringOffice")
             )
         );
         services.AddScoped<ISocialNetworkDbContext>(provider => provider.GetService<SocialNetworkApiContext>()!);
