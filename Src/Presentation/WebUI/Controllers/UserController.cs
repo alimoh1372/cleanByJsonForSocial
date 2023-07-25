@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebUI.Controllers
 {
-    [Authorize]
+   
     public class UserController : CustomBaseController
     {
         #region Post Apis
